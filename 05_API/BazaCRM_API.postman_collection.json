@@ -1,0 +1,87 @@
+{
+  "info": {
+    "name": "BazaCRM_API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login (POST)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"kminchelle\",\n  \"password\": \"0lelplR\"\n}"
+        },
+        "url": {
+          "raw": "https://dummyjson.com/auth/login",
+          "protocol": "https",
+          "host": [
+            "dummyjson",
+            "com"
+          ],
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Users (GET)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer <token>"
+          }
+        ],
+        "url": {
+          "raw": "https://dummyjson.com/users",
+          "protocol": "https",
+          "host": [
+            "dummyjson",
+            "com"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Product (POST)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"iPhone 14\",\n  \"description\": \"Apple smartphone\",\n  \"price\": 999\n}"
+        },
+        "url": {
+          "raw": "https://dummyjson.com/products/add",
+          "protocol": "https",
+          "host": [
+            "dummyjson",
+            "com"
+          ],
+          "path": [
+            "products",
+            "add"
+          ]
+        }
+      }
+    }
+  ]
+}
